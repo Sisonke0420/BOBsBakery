@@ -1,0 +1,120 @@
+:root{
+	--Blue: #3CAEA3;
+	--Pink: #FF9A8B;
+	--Yellow: #F6D55C;
+	--White: #fffdfd;
+  --font-family: "Nunito", sans-serif;
+}
+body{
+  background-color: var(--White);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+/* Page wrapper */
+.contact-container{
+	text-align: center;
+	color: var(--Text);
+}
+.contact-container h1{
+	margin: 0 0 8px 0;
+	font-size: 2.1rem;
+}
+.contact-container p{
+	margin: 0 0 24px 0;
+	color: #444;
+}
+
+/* Two-column contact box */
+.contact-box{
+	background: var(--White);
+	display: flex;
+	gap: var(--Gap);
+	border-radius: var(--Radius);
+	overflow: hidden;
+	box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.contact-left,
+.contact-right{
+	padding: 32px 36px;
+}
+.contact-left{
+	flex: 0 0 60%;
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 100%);
+}
+.contact-right{
+	flex: 0 0 40%;
+	background: linear-gradient(180deg, var(--Pink) 0%, #ffb0a5 100%);
+	color: white;
+}
+
+.contact-left .input-row{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px 18px;
+	margin-top: 18px;
+}
+.input-group{
+	display: flex;
+	flex-direction: column;
+}
+.input-group label{
+	font-size: 0.9rem;
+	margin-bottom: 6px;
+	color: #333;
+}
+.input-group input,
+.input-group textarea{
+	padding: 10px 12px;
+	border-radius: 8px;
+	border: 1px solid #e6e6e6;
+	font-size: 0.95rem;
+	outline: none;
+	resize: vertical;
+}
+.input-group input:focus,
+.input-group textarea:focus{
+	border-color: var(--Blue);
+	box-shadow: 0 4px 14px rgba(60,174,163,0.12);
+}
+
+/* textarea inside right uses full width */
+.contact-right .input-group{
+	margin-bottom: 18px;
+}
+.contact-right {
+	border-radius: 8px;
+	border: none;
+	font-size: 0.9em;
+}
+/* Button styles */
+button{
+	display: inline-block;
+	background: var(--Blue);
+	color: white;
+	border: none;
+	padding: 10px 18px;
+	border-radius: 8px;
+	font-weight: 700;
+	cursor: pointer;
+}
+button[type="submit"]:hover{
+	background: var(--Yellow)
+}
+
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 820px){
+	.contact-box{ flex-direction: column; }
+	.contact-left, .contact-right{ padding: 20px; }
+	.contact-left .input-row{ grid-template-columns: 1fr; }
+}
+
+/* Small tweak for very small screens */
+@media (max-width: 420px){
+	.contact-container{ padding: 16px; }
+	.contact-left, .contact-right{ padding: 16px; }
+}
+

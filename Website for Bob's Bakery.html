@@ -1,74 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="HTML,CSS">
-  <meta name="description" content="">
-  <title>Bob's Bakery</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="Navigation">
-  <h1 id="Header Text">BOB's Bakery&copy;</h1>
-  </div>
-  <br>
-  <h2 style="
-    font-size: 20px;
-    font-family: 'Brush Script MT', cursive;
-    color: #2d1212;
-    text-align: center;
-    margin: 0 20px;">
-    Freshly Baked Goodness Every Day!
-  </h2>
-  <br>
-  <img src ="Images/E107S0YV.avif" alt="" class="center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML,CSS" />
+    <meta name="description" content="Bob's Bakery — fresh baked bread, pastries, and catering in Bethlehem. Hand-made daily using local ingredients; vegan options and delivery available." />
+    <!-- Replace example.com with your real domain in the canonical and OG/Twitter tags -->
+    <link rel="canonical" href="https://example.com/" />
+    <link rel="icon" href="E103CQ36.avif" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bob's Bakery — Fresh Breads & Pastries" />
+    <meta property="og:description" content="Bob's Bakery — hand-made breads and pastries baked daily in Bethlehem. Try our Caramel Bun, Rustic Sourdough, and seasonal specials." />
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/29/05/07/breads-1867459_1280.jpg" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:site_name" content="Bob's Bakery" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bob's Bakery — Fresh Breads & Pastries" />
+    <meta name="twitter:description" content="Hand-made breads and pastries baked daily in Bethlehem. Vegan options and delivery available." />
+    <meta name="twitter:image" content="https://cdn.pixabay.com/photo/2016/11/29/05/07/breads-1867459_1280.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "Bob's Bakery",
+        "image": [
+          "https://cdn.pixabay.com/photo/2016/11/29/05/07/breads-1867459_1280.jpg"
+        ],
+        "telephone": "0631234567",
+        "email": "bobsbakery@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "12 Baker St",
+          "addressLocality": "Bethlehem",
+          "addressRegion": "Free State",
+          "postalCode": "9700",
+          "addressCountry": "ZA"
+        },
+        "url": "https://example.com/",
+        "openingHours": "Mo-Sa 07:00-18:00",
+        "sameAs": [
+          "https://instagram.com/BobsBakery"
+        ]
+      }
+    </script>
+    <title>Bob's Bakery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="Navigation-Bar">
+      <div class="logo-header">
+        <h1 id="logo">Bob's Bakery</h1>
+      </div>
+      <div class="link-containers">
+        <a href="Website for Bob's Bakery.html" class="nav-link" id="home"
+          >Home</a
+        >
+        <a href="User Page.html" class="nav-link" id="menu">Menu</a>
+        <a href="contact.html" class="nav-link" id="cart">Contact</a>
+      </div>
+    </div>
+    
 
-  
 
-  <p style="
-    font-size: 35px;
-    font-family: 'Brush Script MT', cursive;
-    color: #666;
-    text-align: center;
-    margin: 0 20px;
-  ">BOB’s Bakery is a proudly local, family-owned bakery established in 2003 by founder Mr. Bob Mokoena in the heart of Bethlehem, Free State. For over two decades, the bakery has been a cornerstone of the community, known for its freshly baked bread, pastries, and warm customer service. With a strong reputation built on consistency, quality, and tradition, BOB’s Bakery has become the preferred supplier of baked goods for households, schools, businesses, and local events in the area.
-  </p>
 
-  <br>
- <img src ="Images/E103CQ36.avif" alt="" class="center">
-  <br>
+    <h2 style="font-size: 3rem;text-align: center; text-shadow: 20px;">About Us</h2>
+    <p class="body-paragraph">
+      BOB’s Bakery is a family-owned favorite since 2003. We bake everything
+      from scratch each morning — think hand-shaped sourdough, flaky honey
+      croissants, and Bob's famous caramel buns. We source local ingredients,
+      rotate seasonal specials, and cater community events across Bethlehem.
+    </p>
+    <br>
+    <div class="image" id="image-of-Bob's Bakery">
+      <img src="https://cdn.pixabay.com/photo/2017/05/10/21/25/vacation-2302009_1280.jpg" alt="image of Bob's Bakery">
+    </div>
+      <h2 style="font-size: 3rem;text-align: center;">Testimony</h2>
+      <div class="body-text">
+      <p class="body-paragraph">
+        Our bestsellers include the Caramel Bun, Rustic Sourdough, and Chocolate
+        Hazelnut Tart. Other crowd-pleasers you should try: Almond Croissant,
+        Cinnamon Swirl, Blueberry Muffins, Gluten-Free Banana Bread, and
+        Savory Cheese Scones. Pair pastries with our house-blend coffee or grab a
+        mixed pastry box for sharing. We avoid preservatives, offer vegan
+        options, and provide custom orders for events — order ahead for pickup
+        or same-day delivery in nearby neighborhoods. Ask about our subscription
+        boxes and catering packages for recurring deliveries or special events.
+      </p>
+    </div>
 
-  <p style="
-    font-size: 35px;
-    font-family: 'Brush Script MT', cursive;
-    color: #666;
-    text-align: center;">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam possimus dignissimos itaque aliquid facere non eligendi earum unde, voluptates quidem deleniti impedit quibusdam quo tempore voluptatibus, dicta eius nisi ab.
-  </p>
+     <div class="image" id="image-of-insideBob's Bakery">
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/12/54/cafe-1869656_1280.jpg" alt="image of inside Bob's Bakery ">
+    </div>
+    <p class="body-paragraph">
+      "Bob's Bakery has been my go-to spot for fresh bread and pastries for
+      years. Their commitment to quality and community is evident in every bite.
+      Highly recommend the caramel buns!" — Sarah L.
+    
+    </p>
 
-  <img src="Images/E109AU14.avif" alt="" class="center">
-  <br>
-  <p style="
-    font-size: 35px;
-    font-family: 'Brush Script MT', cursive;
-    color: #666;
-    text-align: center;
-    margin: 0 20px;">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod>
-  </p>
-  <br>
-  <img src="Images/E10A49H1.avif" alt="" class="center">
-  <button id="Home B" class="center">Home</button>
-  <button id="User B" class="center">User</button>
-  <button id="Purchase B" class="center">Purchase</button
+    <div class="icon-container">
+      <div class="icon"><i class="fa-solid fa-cookie"></i></div>
+      <div class="icon"><i class="fa-solid fa-cake-candles"></i></div>
+      <div class="icon"><i class="fa-solid fa-map-pin"></i></div>
+      <div class="icon"><i class="fa-solid fa-award"></i></div>
+    </div>
 
-  
+   
 
-  <footer>
-    <p>&copy; 2024 Bob's Bakery. All rights reserved.</p>
-    <p>Contact us:063 123 4567 | Bob's Bakery@gmail.com
-  </footer>
 
-</body>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Bob's Bakery — Serving smiles since 2003.</p>
+        <p>063 123 4567 | bobsbakery@gmail.com | 12 Baker St, Bethlehem</p>
+        <p>Open Mon–Sat 7:00–18:00 — Follow us on
+          <a href="#" class="social-link">Instagram @BobsBakery</a>
+        </p>
+      </div>
+    </footer>
+    <br>
+    <div class="carousel">
+      <div class="card-container">
+        <div class="card-image">
+          <img src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_1280.jpg" alt="">
+        </div>
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2014/03/07/11/00/bananas-282313_1280.jpg" alt=""></div>
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2016/11/29/05/07/breads-1867459_1280.jpg" alt=""></div>
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2023/12/13/17/54/bun-8447394_1280.jpg" alt=""></div>
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2019/11/17/18/01/donuts-4633040_1280.jpg" alt=""></div>
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2016/11/29/09/00/doughnuts-1868573_1280.jpg" alt=""></div>
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2014/07/09/22/09/bread-388647_1280.jpg" alt=""></div>
+      </div>
+        <div hidden class="card-container">
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_1280.jpg" alt=""></div>
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2014/03/07/11/00/bananas-282313_1280.jpg" alt=""></div>
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2016/11/29/05/07/breads-1867459_1280.jpg" alt=""></div>
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2023/12/13/17/54/bun-8447394_1280.jpg" alt=""></div>
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2019/11/17/18/01/donuts-4633040_1280.jpg" alt=""></div>
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2016/11/29/09/00/doughnuts-1868573_1280.jpg" alt=""></div>
+        <div class="card-image"><img src="https://cdn.pixabay.com/photo/2014/07/09/22/09/bread-388647_1280.jpg" alt=""></div>
+    </div>
+    <br>
+    </div>
+
+    
+
+
+    <script src="app.js"></script>
+  </body>
 </html>
+ 
